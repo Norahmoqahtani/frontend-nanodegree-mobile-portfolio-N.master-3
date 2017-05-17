@@ -1,13 +1,27 @@
-Website Performance Optimization portfolio project
-***************************************************
-Project Overview
-*****************
+
+#  Website Performance Optimization portfolio project
+
+## Project Overview
 In this project we have to optmize the website and achieves the PageSpeed score of at least 90. 
 
+- Resizing image 
+
+
+
+### To check the project
+The website is available online for viewing at 
+[https://github.com/Norahmoqahtani/frontend-nanodegree-mobile-portfolio-N.master-3](https://github.com/Norahmoqahtani/frontend-nanodegree-mobile-portfolio-N.master-3)
+
+## Running The Project
+
+
+1. Clone the repository
+2. Open *index.html* in a web browser
 
 
 
 
+*******************************************************
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
