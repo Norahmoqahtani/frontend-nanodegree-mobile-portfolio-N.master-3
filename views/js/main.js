@@ -432,11 +432,11 @@ var resizePizzas = function (size) {
     function sizeSwitcher (size) {
         switch (size) {
             case "1":
-            return 0.25;
+            return 25;
             case "2":
-            return 0.3333;
+            return 33.33;
             case "3":
-            return 0.5;
+            return 50;
             default:
             console.log("bug in sizeSwitcher");
         }
@@ -527,7 +527,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function () {
     var cols = 8;
     var s = 256;
-    for (var i = 0; i < 100; i++) {
+    for (var i = 0; i < 200; i++) {
         var elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/pizza.png";
