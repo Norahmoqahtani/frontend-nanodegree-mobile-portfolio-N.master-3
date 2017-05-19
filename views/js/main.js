@@ -423,36 +423,28 @@ var resizePizzas = function (size) {
     changeSliderLabel(size);
     
     // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
-    /*  function determineDx (elem, size) {
-    var oldWidth = elem.offsetWidth;
-    var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
-    var oldSize = oldWidth / windowWidth;*/
-    
     // Changes the slider value to a percent width
-    function sizeSwitcher (size) {
+    function changePizzaSizes(size) {
         switch (size) {
             case "1":
-            return 0.25;
+            newWidth = 25;
+            break;
             case "2":
-            return 0.3333;
+            newWidth = 33.3;
+            break;
             case "3":
-            return 0.5;
+            newWidth = 50;
+            break;
             default:
-            console.log("bug in sizeSwitcher");
+            console.log("bug in changePizzaSizes");
         }
-    }
-    
-    
-    var windowWidth = document.getElementById("randomPizzas").offsetWidth;
-    
-    function changePizzaSizes(size) {
-        var pizzaContainers = document.getElementsByClassName("randomPizzaContainer");
-        //var dx = determineDx(pizzaContainers[0], size);
-        //var newwidth = (pizzaContainers[0].offsetWidth + dx) + 'px';
-        //for (var i = 0; i < pizzaContainers.length; i++) {
-        //pizzaContainers[i].style.width = newwidth;
+        
+        // Iterates through pizza elements on the page and changes their widths
+        
+        var randomPizzas = document.getElementsByClassName("randomPizzaContainer");
+        
         for (var i = 0; i < randomPizzas.length; i++) {
-            randomPizzas[i].style.width = (sizeSwitcher(size) * windowWidth) + 'px';
+            randomPizzas[i].style.width = newWidth + "%";
         }
     }
     
@@ -528,7 +520,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function () {
     var cols = 8;
     var s = 256;
-    for (var i = 0; i < 44; i++) {
+    for (var i = 0; i < 48; i++) {
         var elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/pizza.png";

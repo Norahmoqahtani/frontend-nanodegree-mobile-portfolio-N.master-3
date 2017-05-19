@@ -4,8 +4,12 @@
 ## Project Overview
 In this project we have to optmize the website and achieves the PageSpeed score of at least 90. 
 
-- Resizing image 
+## Changes made to index.html
 
+- Moved script tags to the bottom of the index.HTML file.
+- Added media attribute to print CSS tag.
+- resized pizzeria and pizza.
+- Added style.css to the index.html.
 
 
 ### To check the project
